@@ -1,0 +1,22 @@
+{
+  "build": {
+    "staging": {
+      "channel": "staging",
+      "env": {
+        "APP_ENV": "staging"
+      },
+      "ios": {
+        "image": "macos-monterey-12.4-xcode-13.4",
+        "simulator": false
+      },
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleRelease"
+      }
+    }
+  },
+
+  "cli": {
+    "version": ">=0.50.0"
+  }
+}
